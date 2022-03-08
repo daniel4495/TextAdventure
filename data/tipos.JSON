@@ -1,0 +1,9 @@
+[   {"id": 1, "class": "Guerrero", "HP": "1","MP": "2", "img": ["img/Guerrero/Guerrero.png"],"detalle": "Clasica clase guerrero basica"},
+    {"id": 2, "class": "Picaro", "HP": "2","MP": "2", "img": ["img/Picaro/Picaro.png"], "detalle": "Clasica clase de picaro ladron"},
+    {"id": 3, "class": "Mago", "HP": "2","MP": "2", "img": ["img/Mago/Mago.png"],  "detalle": "Mago de toda la vida "},
+    {"id": 4, "class": "Guardabosques", "HP": "3","MP": "2", "img": ["img/Guardabosques/Guardabosques.png"], "detalle": "subclase de guerrero"},
+    {"id": 5, "class": "Clerigo", "HP": "1","MP": "2", "img": ["img/Clerigo/Clerigo.png"], "detalle": "subclase del mago"},
+    {"id": 6, "class": "Barbaro", "HP": "2","MP": "2", "img": ["img/Barbaro/Barbaro.png"], "detalle": "Fuerte pero lento"},
+    {"id": 7, "class": "Espadachin", "HP": "3","MP": "2", "img": ["img/Espadachin/Espadachin.png"], "detalle": "Rapido y de medio alcance"},
+    {"id": 8, "class": "Lanzero", "HP": "3","MP": "2", "img": ["img/Lanzero/Lanzero.png"], "detalle": "Lento pero de mucho alcance"},
+    {"id": 9, "class": "Invocador", "HP": "3","MP": "2", "img": ["img/Invocador/Invocador.png"],"detalle": "subclase del mago"}]

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Document</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel="stylesheet" href="css/menuStyle.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+
+</head>
+
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active"><img src="img/role-playing-game.png" alt="" width="30px"></a>
+            <a href="#"><button id='btnLightmode'>Light</button></a>
+            <a href="#"><button id='btnDarkmode'>Dark</button></a>
+            <a href="#"><button id='btnBeigemode'>Beige</button></a>
+            <a href="#"><button id='btnBisquemode'>Bisque</button></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h1>Welcome to Text Adventure!</h1>
+        </div>
+        <form action='' id='form' class="visible">
+            <!--Un form el cual va a cambiar a ser invisible luego de presionar un boton-->
+            <label for='name'>To start first put the name of your character</label>
+            <input type='text' id='name' name='name' placeholder='nickname'><br>
+
+            <p>Then choose the difficulty</p>
+            <input type='radio' id='easyMode' name='difficulty' value='Easy'>
+            <label for='easyMode'>Easy</label><br>
+            <input type='radio' id='normalMode' name='difficulty' value='Normal'>
+            <label for='normalMode'>Normal</label><br>
+            <input type='radio' id='hardMode' name='difficulty' value='Hard'>
+            <label for='hardMode'>Hard</label><br>
+
+            <!--Creamos un select de clases a cargar con imagenes de cada uno-->
+            <select class="classes" name="classes">
+                <option value="Knight">Knight</option>
+                <option value="Rogue">Rogue</option>
+                <option value="Wizard">Wizard</option>
+                <option value="Forest ranger">Forest ranger</option>
+                <option value="Priest">Priest</option>
+                <option value="Barbarian">Barbarian</option>
+                <option value="Sword master">Sword master</option>
+                <option value="Lancer">Lancer</option>
+                <option value="Summoner">Summoner</option>
+            </select>
+            <div id="imageWrapper"></div>
+            <div id="listasClases"></div>
+
+            <button type='button' id='btnContinue'>Continue</button>
+        </form>
+
+        <div id="afterForm"></div>
+        <form id="theAdventure" class="oculto">
+            <p></p>
+            <fieldset></fieldset>
+            <a id="continueButton" class="continue" href="javascript:void(0);">Continue</a>
+        </form>
+    </main>
+
+    <div class="footer">
+        <footer>
+            <p>Author: Daniel Petti</p>
+        </footer>
+    </div>
+
+    <script src='https://code.jquery.com/jquery-3.6.0.js'></script>
+    <script src='js/colorMode.js'></script>
+    <script src='js/miarchivo.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
