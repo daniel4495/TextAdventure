@@ -1,45 +1,48 @@
-* { 
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
 }
+
+h1 {
+    display: inline-block;
+    margin: 1em;
+    text-align: center;
+}
+
+body {
+    text-align: center;
+}
+
 .navbar {
     width: 100%;
 }
-body {
-    height: 100%;
-    margin: 0;
-    padding: 25px;
-    background-color: white;
-    color: black;
-    font-size: 25px;
-}
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+
 form {
     height: 400px;
     padding: 2em;
+    font-size: 1.3em;
 }
+
 form fieldset {
     margin-bottom: 28px;
     padding: 0;
     border: none;
 }
+
 form a.continue {
-    font-size:  1.3em;
+    font-size: 1.3em;
     background-color: beige;
     color: black;
     padding: .5em 1em;
     text-decoration: none;
 }
+
 form a.continue:hover,
 form a.continue:focus {
     background-color: #DA966A;
     color: white;
 }
+
 form label span {
     padding-right: 1em;
     margin-right: 1em;
@@ -48,35 +51,137 @@ form label span {
     border-radius: 10%;
     font-size: 1.2em;
 }
+
 .light-mode {
-    background-color: white;
+    background: linear-gradient(90deg, #E5E3C9 0%, #B4CFB0 35%, #94B49F 100%);
 }
+
 .dark-mode {
-    background-color: grey;
-    color:white;
+    background: linear-gradient(90deg, #023e7d 0%, #002855 35%, #001233 50%, #33415c 75%, #5c677d 100%);
+    color: #F5F2E7;
 }
+
 .beige-mode {
-    background-color: beige;
+    background: linear-gradient(90deg, #dbe1bc 0%, #f4f4d5 35%, #fefae0 50%, #faedcd 75%, #e7c8a0 100%);
 }
+
 .bisque-mode {
-    background-color: bisque;
+    background: linear-gradient(90deg, #fde2e4 0%, #fad2e1 35%, #c5dedd 50%, #dbe7e4 75%, #f0efeb 100%);
 }
+
 .navbar-subtitle {
     color: white;
 }
+
 .logo-img {
     width: 3em;
 }
+
 .navbar-subtitle {
     text-align: center;
 }
+
 .visible {
-    display:block;
+    display: block;
 }
+
 .oculto {
-    display:none;
+    display: none;
 }
-button {
-    padding-right: 1em;
-    padding-left: 1em;
+
+#image {
+    margin-bottom: 2em;
+}
+
+.button-30 {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.button-30:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button-30:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.button-84 {
+    align-items: center;
+    background-color: initial;
+    background-image: linear-gradient(#464d55, #25292e);
+    border-radius: 8px;
+    border-width: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .05);
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    font-family: expo-brand-demi, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 18px;
+    height: 52px;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 32px;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all 150ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.button-84:hover {
+    box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+    opacity: .85;
+}
+
+.button-84:active {
+    outline: 0;
+}
+
+.button-84:focus {
+    box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
+}
+
+@media (max-width: 420px) {
+    .button-84 {
+        height: 48px;
+    }
 }

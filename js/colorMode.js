@@ -12,6 +12,8 @@ elementBtnBeigemode.addEventListener('click', beigeMode);
 const elementBtnBisquemode = document.getElementById('btnBisquemode');
 elementBtnBisquemode.addEventListener('click', bisqueMode);
 
+
+
 function darkMode() {
     let element = document.body;
     element.className = 'dark-mode';

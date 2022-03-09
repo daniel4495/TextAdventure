@@ -116,9 +116,9 @@ $(document).ready(function () {
         function minusVida() {
             player1.vida = player1.vida-1;
             console.log("perdiste vida :( te queda: "+player1.vida)
-            $(".status").append('<p></p>')
+            $('.status').append('<h2>asdasd</h2>');
         }
-        
+
         let story_telling = {
             "start": {
                 "question": "You are an adventurer and you are leaving a town with your 2 new partners, where are you headed?",
