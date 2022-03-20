@@ -1,7 +1,9 @@
+listaJson = [];
 let story = 0;
 let form = document.getElementById('theAdventure');
 let submit = document.getElementById('continueButton');
 let answer = '';
+let pjWelcome = "";
 
 // CLASE PLAYER //
 
@@ -15,7 +17,7 @@ class Player {
     }
 
     ID() {
-        const pjWelcome = document.querySelector('h1');
+        pjWelcome = document.querySelector('h1');
         pjWelcome.textContent = 'Welcome ' + $('#name').val() + '! ' + "Your profession will be: "+ $('.classes :selected').val();
         pjWelcome.textContent;
     }
@@ -88,6 +90,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $.get("data/tipos.JSON", (respuesta) => {
         console.log(respuesta);
+        listaJson = respuesta;
 
         let selectedClass = "Knight";
 
@@ -227,6 +230,13 @@ $(document).ready(function () {
     })
 })
 
+function mostrarSeleccion(seleccionado) {
+    listaJson.map(elemento => {
+        if(elemento == seleccionado) {
+            
+        }
+    })
+}
 
 /*let selectedClass = "Knight";
 let classes = [{
